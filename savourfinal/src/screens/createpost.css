@@ -1,0 +1,8 @@
+.bg-white {
+    background-color: #fff !important;
+  }
+
+  .bgcolor{
+    background: linear-gradient(0deg, #1d100d, #482317, #1d100d);
+    /*background: linear-gradient(0deg, #000000, #271619,#170408, #000000);*/
+  }

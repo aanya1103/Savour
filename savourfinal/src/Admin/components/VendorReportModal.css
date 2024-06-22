@@ -1,0 +1,20 @@
+th{
+    font-size: small;
+    color:black
+}
+td{
+
+    font-size: smaller;
+    font-style: italic;
+    padding: 5px;
+}
+h5{
+    font-style: bold;
+    margin-top: 25px;
+    color: rgb(236, 214, 13);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  

@@ -1,0 +1,93 @@
+.registration-container1 {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    background-image: url('../assets/bg1.jpg'); /* Background image */
+    background-size: cover;
+    color: #fff;
+    padding-top:20px ;
+  }
+  
+  .form-container1 {
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    margin: auto; /* Center the form container */
+    margin-bottom: 80px;
+    border-radius: 5px;
+    background-color: rgba(38, 37, 37, 0.3) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    color: rgb(179, 178, 178); /* Font color */
+    margin-top: 100px; /* Add margin to shift down */
+    max-height: 500px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrollbar when content exceeds height */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #555 transparent; /* Firefox */
+   
+  }
+
+/* Create a custom scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+.form-container::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+.form-container::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the scrollbar track */
+}
+
+.form-container::-webkit-scrollbar-thumb {
+    background-color: #555; /* Set the color of the scrollbar thumb */
+    border-radius: 10px; /* Round the corners of the scrollbar thumb */
+}
+
+/* Create a custom scrollbar for Firefox */
+.form-container {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: #555 transparent; /* Set the color of the scrollbar thumb and track */
+}
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #b7b7b7 !important;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  label{
+    font-style: italic;
+    color: #dddddd;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(224, 146, 11);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    background-color: rgb(224, 146, 11);
+    color: #000000;
+  }
+  
+  .coloryellow {
+    color: rgb(255, 162, 0);
+  }
+  

@@ -1,0 +1,71 @@
+/* ViewVendors.css */
+
+.admin-users-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .vendor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .vendor-table th,
+  .vendor-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .vendor-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .vendor-table tbody tr {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vendor-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #f0ba26;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #e09f19;
+  }
+  
+  .download-button {
+    background-color: #37923a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #45a049;
+  }
+  

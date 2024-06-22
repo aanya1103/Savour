@@ -1,0 +1,112 @@
+/* .full-view-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 330px;
+  padding: 10px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff; 
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  overflow-y: auto; 
+} */
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.menu-header h3 {
+  color: #333; /* Set menu heading color */
+}
+
+.menu-header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333; /* Set close button color */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  max-height: calc(100vh - 150px); /* Adjust the max-height as needed */
+  overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+}
+
+.table th,
+.table td {
+  padding: 3px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle; /* Align content vertically */
+}
+
+.table td:last-child {
+  white-space: nowrap; /* Prevent wrapping of buttons */
+}
+
+.table input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn-red,
+.btn-primary,
+.btn-danger,
+.btn-outline-secondary {
+  display: inline-block; /* Display buttons in-line */
+  vertical-align: middle; /* Align buttons vertically */
+  margin-right: 5px; /* Add margin between buttons */
+  margin-bottom: 5px; /* Add margin at the bottom */
+  padding: 8px 15px; /* Adjust padding */
+  border-radius: 3px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.btn-red {
+  background-color: rgb(12, 88, 250);
+  color: white;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+
+  .full-view-menu {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.item1:hover .deleteIcon {
+  display: block;
+}
+
+.item1:hover {
+  outline: 5px solid red;
+  outline-offset: -5px;
+}

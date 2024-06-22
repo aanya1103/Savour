@@ -1,0 +1,35 @@
+.view-reports-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 90px;
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .report-option {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .report-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  

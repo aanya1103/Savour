@@ -1,0 +1,68 @@
+.item{
+    min-width: 220px;
+    max-width: 220px;
+    margin-left: 15px;
+    height: 290px;
+    border-radius: 20px;
+    background: rgb(242, 242, 242);
+  }
+  .left, .right{
+    position: absolute;
+    background: rgb(242, 242, 242);
+    border-radius: 50px;
+  }
+  .left:hover, .right:hover{
+    cursor: pointer;
+  }
+  .item-div::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+  }
+  .back{
+    background-image: url(../assets/back.png);
+  }
+  .back2{
+    background-image: url(../assets/back2.png);
+  }
+  .grow{
+    transition: transform 0.1s , box-shadow 0.3s;
+    
+  }
+  .grow:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(67, 24, 10, 0.718) !important;
+  }
+  .typein {
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    animation: typing 3s steps(30) infinite;
+  }
+  
+  @keyframes typing {
+    from {
+        width: 0;
+        border-right-color: #000000; 
+    }
+    to {
+        width: 100%;
+        border-right-color: transparent;
+    }
+  }
+  .gradient {
+    background: linear-gradient(270deg, rgb(67, 24, 10), rgb(216, 111, 18), rgb(142, 40, 6), rgb(67, 24, 10)) !important;
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  button{
+    border: none !important;
+    margin: 20px;
+  }
+
+  .navbar-light{
+    background-color: rgba(142, 40, 6, 0);
+    box-shadow: none !important;
+  }
+  
+  

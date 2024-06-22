@@ -1,0 +1,36 @@
+.search-page {
+    padding: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .result-block {
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+  }
+  

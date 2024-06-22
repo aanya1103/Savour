@@ -1,0 +1,49 @@
+/* AdminLayout.css */
+.fixed-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    width: 16.6%;
+    background: linear-gradient(90deg, #000000, #1d100d);
+    color: #ffffff;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.fixed-sidebar .logo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.fixed-sidebar .logo h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.fixed-sidebar .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fixed-sidebar .nav-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fixed-sidebar .nav-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.fixed-sidebar .nav-item:hover {
+    transform: scale(1.1);
+}
+
+.fixed-sidebar .nav-item a:hover {
+    text-decoration: underline;
+}

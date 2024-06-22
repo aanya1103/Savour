@@ -1,0 +1,45 @@
+/* AdminLayout.css */
+
+.fixed-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px; /* Adjust the width as needed */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    background: linear-gradient(90deg, #000000, #1d100d);
+    z-index: 1000; /* Ensure the sidebar is above other elements */
+  }
+  
+  .logo {
+    color: #fff;
+  }
+  
+  .nav-pills {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .nav-item {
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  /* Add the following style to prevent text selection on the sidebar */
+  .fixed-sidebar::selection {
+    background-color: transparent;
+  }
+  
+  /* Optionally, add a transition effect for a smoother scroll */
+  .fixed-sidebar {
+    transition: width 0.3s ease;
+  }
+  
+  /* Optionally, add a box shadow for a subtle elevation effect */
+  .fixed-sidebar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,88 @@
+/* .top-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+} */
+.top-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Align items vertically */
+}
+
+.delete-all-button {
+  background-color: #f0ba26;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Adjusted margin to add space between buttons */
+}
+
+.delete-all-button:hover {
+  background-color: #d89c1b; /* Adjusted hover color */
+}
+
+.edit-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #2980b9;
+}
+
+.app-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.actions-container button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions-container button:hover {
+  background-color: #45a049;
+}
+.actions-container {
+  position: relative;
+}
+
+.update-link {
+  display: inline-block;
+  padding: 8px;
+  background-color: #3498db; /* You can change the background color */
+  color: #ffffff; /* You can change the text color */
+  border-radius: 10%;
+  text-decoration: none;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.update-link:hover {
+  background-color: #2980b9; /* Change the background color on hover */
+}
+/* Add the following styles to your CSS file to add spacing between table columns */
+.vendor-table th,
+.vendor-table td {
+  padding: 10px;
+}
+
+/* Optionally, you can add some margin to the buttons in edit mode to separate them from the table */
+.app-container .actions-container {
+  margin-top: 10px;
+}

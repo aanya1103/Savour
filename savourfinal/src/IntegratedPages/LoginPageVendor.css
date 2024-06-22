@@ -1,0 +1,87 @@
+.glass-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/bg1.jpg'); /* Set initial background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    overflow: hidden;
+    animation: carousel 20s infinite; /* Use the carousel animation for background */
+  }
+  
+  @keyframes carousel {
+    0% {
+      background-image: url('../assets/bg1.jpg');
+    }
+    25% {
+      background-image: url('../assets/bg2.jpg');
+    }
+    50% {
+      background-image: url('../assets/bg3.jpg');
+    }
+    75% {
+      background-image: url('../assets/bg4.jpg');
+    }
+    100% {
+      background-image: url('../assets/bg2.jpg');
+    }
+  }
+  
+  .form-container2 { 
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px !important;
+    padding: 20px !important;
+    margin-left: 150px;
+    border-radius: 5px;
+    background-color: rgba(38, 37, 37, 0.5) !important;   
+    backdrop-filter: blur(10px);  
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    color: rgb(179, 178, 178); /* Font color */
+  }
+  
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #575757 !important;
+    color: #fff;
+  }
+  label{
+    font-style: italic;
+  }
+  .loginButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000a3  !important;
+    color: rgb(224, 128, 11) !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+  button:hover {
+    background-color: #ffffff;
+  }
+  
+  .coloryellow {
+    color: rgb(224, 146, 11);
+  }
+  

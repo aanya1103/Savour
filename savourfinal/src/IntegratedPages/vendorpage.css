@@ -1,0 +1,13 @@
+body{
+    /* text-align:  center; */
+    /* align-items: center;
+    justify-content: center; */
+    background-color: #100f0f;
+    overflow:hidden;
+  }
+  .maincode
+  {
+    overflow-y: auto;
+    background-color: #100f0f;
+  }
+  
