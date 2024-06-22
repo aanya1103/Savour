@@ -1,0 +1,54 @@
+const express=require("express");
+const Router= express.Router();
+const controllers= require("../controllers/allControllers");
+const signUpvalidator= require("../validators/auth-validator");
+const validate= require("../middlewares/validate-middleware");
+const requireLogin= require("../middlewares/requireLogin");
+const loginValidator= require("../validators/login-validator");
+
+Router.route("/mypost").post(requireLogin,controllers.mypost);
+Router.route("/allpost").get(requireLogin,controllers.allpost);
+Router.route("/createpost").post(controllers.createpost);
+Router.route("/deletePost/:postId").delete(controllers.deletePost);
+// Router.route("/register").post(validate(signUpvalidator),controllers.register);
+Router.route("/register").post(controllers.register);
+Router.route("/login").post(controllers.login);
+Router.route("/forgot-password").post(controllers.forgotPassword);
+Router.route("/reset-password").post(controllers.resetPasswordd);
+// Router.route("/search").post(controllers.searchuser);
+Router.route("/like").put(requireLogin,controllers.likepost);
+Router.route("/unlike").put(requireLogin,controllers.unlikepost);
+Router.route("/serachuserlikes").post(requireLogin,controllers.searchuserlike);
+Router.route("/vendorRequest").post(controllers.vendorrequesting);
+Router.route("/user/:id").get(requireLogin,controllers.profile);
+// Router.route("/vendor/:id").get(requireLogin,controllers.profile);
+Router.route("/login-vendor").post(controllers.loginVendor);
+Router.route("/old-orders").post(controllers.oldOrders);
+Router.route("/my-orders").post(controllers.myOrders);
+Router.route("/pending-orders").post(controllers.myPendingOrders);
+Router.route("/user-my-orders").post(controllers.myOrdersUser);
+Router.route("/user-pending-orders").post(controllers.myPendingOrdersUser);
+Router.route("/user-cancel-orders").post(controllers.myCancelOrdersUser);
+Router.route("/allorders").post(controllers.allOrders);
+Router.route("/post-ratings").post(controllers.postRatings);
+Router.route("/getratings").post(controllers.getRatings);
+// Router.route("/username").get(controllers.findUserName);
+Router.route("/allitems").post(controllers.getMenuItems);
+Router.route("/items/add").post(controllers.addItem);
+Router.route("/items/delete").post(controllers.deleteItem);
+Router.route("/items/:id").patch(controllers.updateItem);
+Router.route("/search").post(controllers.searchController);
+
+Router.route("/items/ordercart").post(controllers.postCartData);
+Router.route("/orders/:orderId").get(controllers.getOrderById);
+Router.route("/orders/:orderId").patch(controllers.updateOrderById);
+Router.route("/user/:userId/address").post(controllers.saveUserAddress);
+Router.route("/user/:userId/address").get(controllers.getUserAddress);
+Router.route("/orderat/:orderId").get(controllers.getOrderDetailsById);
+Router.route("/orders/:orderId/receipt").get(controllers.reportGenerate);
+Router.route("/orders/:orderId/updateStatus").patch(controllers.updateStatus);
+Router.route("/orders/:orderId/updateQuantity").patch(controllers.updateQuantity);
+Router.route("/verify-otp").post(controllers.verifyOtp);
+
+
+module.exports= Router;
